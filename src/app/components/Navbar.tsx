@@ -16,11 +16,11 @@ const Navbar = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="w-full fixed top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800"
+        className="w-full fixed top-0 z-50 bg-gray-100 dark:bg-gray-900 border-b-2 border-amber-600 "
       >
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="text-xl font-bold text-gray-800 dark:text-white">
-            Subhonil Sardar
+          <div className="text-xl font-bold text-orange-400">
+            <Link href="/">Subhonil Sardar</Link>
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
@@ -45,26 +45,32 @@ const Navbar = () => {
   `}
           >
             <Link
-              href="#home"
-              className="text-gray-700 dark:text-gray-300 hover:underline"
+              href="/"
+              className="text-orange-700 dark:text-orange-500 hover:underline"
             >
               Home
             </Link>
             <Link
-              href="#about"
-              className="text-gray-700 dark:text-gray-300 hover:underline"
+              href="/about"
+              className="text-orange-700 dark:text-orange-500 hover:underline"
             >
               About
             </Link>
             <Link
-              href="#projects"
-              className="text-gray-700 dark:text-gray-300 hover:underline"
+              href="/skllis"
+              className="text-orange-700 dark:text-orange-500 hover:underline"
+            >
+              Skill's
+            </Link>
+            <Link
+              href="/projects"
+              className="text-orange-700 dark:text-orange-500 hover:underline"
             >
               Projects
             </Link>
             <Link
-              href="#contact"
-              className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+              href="/contact"
+              className="inline-block bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition"
             >
               Contact
             </Link>
